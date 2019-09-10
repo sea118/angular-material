@@ -1,0 +1,19 @@
+main{
+    width: 100%;
+
+    text-align: center;
+    background-color: rgba(0,0,0,.87);
+}
+#entrada{
+    margin:auto;
+    margin-top: 2rem;
+    width: 30%;
+}
+
+mat-form-field, input{
+    width: 100%;
+}
+mat-toolbar{
+    background-color: #e91e63 !important;
+    color:white;
+}

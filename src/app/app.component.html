@@ -1,0 +1,32 @@
+<body>
+  
+
+<main>
+    <mat-toolbar style="blackground-color: #e91e63">
+        <mat-toolbar-row>
+          <span>Desing</span>
+        </mat-toolbar-row>
+      </mat-toolbar> 
+  <mat-card id="entrada">
+    <form action="">
+<mat-form-field>
+    <input type="text" matInput placeholder="title" #title>
+</mat-form-field>
+<mat-form-field>
+  <mat-select placeholder="album id" #albunId>
+    <mat-option *ngFor="let id of albumsId" value="id">
+{{id}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+    <input type="text" matInput placeholder="url" #url>
+</mat-form-field>
+<button mat-button mat-flat-button color="primary" style="display: block; width: 100%">Guardar</button>
+    </form>
+  </mat-card>
+
+  <app-photos></app-photos>
+</main>
+</body>

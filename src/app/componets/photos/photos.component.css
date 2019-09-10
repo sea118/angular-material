@@ -1,0 +1,16 @@
+mat-card{
+    margin-top: 2rem;
+}
+#cuadro{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 250px;
+}
+#cajon-card{
+    justify-content: center
+}
+#cuadro:hover{
+    box-shadow: 0 30px 70px rgba(78, 55, 12, 0.623);
+    transition: all .3s ease;
+    transform: scale(1.1);
+}

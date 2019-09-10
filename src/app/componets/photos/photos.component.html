@@ -1,0 +1,19 @@
+<div class="container-fluid">
+<div class="row"id="cajon-card">
+
+<mat-card *ngFor="let photo of photos" id="cuadro">
+<div class="col-xs-3">
+    <mat-card-subtitle>
+        {{photo.title}}
+    </mat-card-subtitle>
+    <img [src]="photo.thumbnailUrl" mat-card-image>
+    <mat-card-content>
+        <p>Albun Id:{{photo.id}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button mat-raised-button [href]="photo.url" target="_blank">ver imagen</a>
+        <button mat-button mat-flat-button color="primary">click</button>
+    </mat-card-actions></div>
+</mat-card>
+</div>
+</div>
