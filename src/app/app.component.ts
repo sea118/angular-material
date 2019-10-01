@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { PhotosService } from './services/photos.service';
-import { Photos } from './models/Photos';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +8,7 @@ import { Photos } from './models/Photos';
 })
 export class AppComponent {
 
-albumsId = [1, 2, 3];
-  constructor(public PhotosService: PhotosService) { }
+constructor() { }
+title = 'angular-firebase';
 
 }

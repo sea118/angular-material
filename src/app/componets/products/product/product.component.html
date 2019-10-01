@@ -1,0 +1,56 @@
+<mat-card mt-5>
+    <mat-card-title>Productos</mat-card-title>
+    
+    <mat-card-content>
+        <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+        <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input type="text" name="name" #name="ngModel" [(ngModel)]="productService.selectedProduct.name"  matInput placeholder="Nombre">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Categoria</mat-label>
+            <input type="text" name="category" #category="ngModel" [(ngModel)]="productService.selectedProduct.category"  matInput placeholder="Categoria">
+        </mat-form-field>
+        <br> 
+        <mat-form-field>
+            <mat-label>Location</mat-label>
+            <input type="text"name="location" #location="ngModel" [(ngModel)]="productService.selectedProduct.location"  matInput placeholder="Location">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Price</mat-label>
+            <input type="text" name="price" #price="ngModel" [(ngModel)]="productService.selectedProduct.price"  matInput placeholder="Price">
+        </mat-form-field>
+
+
+    <!-- <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+        <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="productService.selectedProduct.$key">
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" #name="ngModel" [(ngModel)]="productService.selectedProduct.name" placeholder="agregar producto">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="category" #category="ngModel" [(ngModel)]="productService.selectedProduct.category" placeholder="agregar category">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="location" #location="ngModel" [(ngModel)]="productService.selectedProduct.location" placeholder="agregar location">
+        </div>
+       <div class="form-group">
+           <input type="text" class="form-control" name="price" #price="ngModel" [(ngModel)]="productService.selectedProduct.price" placeholder="agregar price">
+        </div>
+    
+    <div class="form-group">
+        <button class="btn" type="submit">Enviar</button>
+        <button class="btn" type="reset" (click)="resetForm(productForm)">reset</button>
+    </div></form> -->
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    <button mat-raised-button color="warn" type="reset" (click)="resetForm(productForm)">reset</button> 
+</mat-card-actions>
+    </form>
+</mat-card-content>
+
+ 
+
+
+</mat-card>

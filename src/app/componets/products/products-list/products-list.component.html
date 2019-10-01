@@ -1,0 +1,18 @@
+<mat-card mt-5>
+    <mat-card-content >
+        <h6>Lista de productos</h6>
+        <table class="table table-sm table-hover">
+            <tbody layout-alig="center center">
+                <tr *ngFor="let product of productList" class="align-content-center">
+                    <td>{{product.name}}</td>
+                    <td>{{product.category}}</td>
+                    <td>{{product.location}}</td>
+                    <td>{{product.price}}</td>
+                    <button class="btn btn-primary" (click)="onEdit(product)">editar</button>
+                    <button  class="btn btn-danger"(click)="onDelete(product.$key)">eli</button>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card-content>
+</mat-card>
+
